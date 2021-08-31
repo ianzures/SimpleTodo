@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:Android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    Android:layout_width="match_parent"
+    Android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <Button
+        Android:id="@+id/btnAdd"
+        Android:layout_width="wrap_content"
+        Android:layout_height="wrap_content"
+        Android:layout_alignParentEnd="true"
+        Android:layout_alignParentBottom="true"
+        Android:layout_marginEnd="0dp"
+        Android:layout_marginBottom="0dp"
+        Android:text="Add" />
+
+    <EditText
+        Android:id="@+id/etItem"
+        Android:layout_width="match_parent"
+        Android:layout_height="wrap_content"
+        Android:layout_alignParentStart="true"
+        Android:layout_alignParentBottom="true"
+        Android:layout_marginStart="0dp"
+        Android:layout_marginEnd="0dp"
+        Android:layout_marginBottom="0dp"
+        Android:layout_toStartOf="@+id/btnAdd"
+        Android:ems="10"
+        Android:hint="Add an item here!"
+        Android:inputType="none" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        Android:id="@+id/rvItems"
+        Android:layout_width="match_parent"
+        Android:layout_height="match_parent"
+        Android:layout_above="@+id/etItem"
+        Android:layout_alignParentStart="true"
+        Android:layout_alignParentTop="true"
+        Android:layout_centerHorizontal="true"
+        Android:layout_marginStart="0dp"
+        Android:layout_marginTop="0dp"
+        Android:layout_marginBottom="0dp" />
+
+</RelativeLayout>
